@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block content %}
+<table class="table table-bordered" style="border: 5px solid black; margin: 5px; width: 650px; text-align: center;">
+    <thead style="background: silver; border: 3px solid gray">
+        <tr>
+            <th colspan="2" style="font-size: 25px; text-align: center;">Opponent</th>
+            <th style="font-size: 25px; text-align: center;">Room No.</th>
+            <th colspan="2" style="font-size: 25px; text-align: center;">Color</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="12" style="background: lightblue; font-size: 30px; vertical-align: middle; width: 200px;">vs AI</td>
+        <td rowspan="4" style="background: yellowgreen; font-size: 20px; vertical-align: middle; width: 150px;">Easy</td>
+        <td style="width: 150px;">Room 0</td>
+        <td style="width: 75px;"><a href="ai/0">white</a></td>
+        <td style="width: 75px;"></td>
+    </tr>
+    <tr>
+        <td>Room 1</td>
+        <td><a href="ai/1">white</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Room 2</td>
+        <td></td>
+        <td><a href="ai/2">black</a></td>
+    </tr>
+    <tr>
+        <td>Room 3</td>
+        <td></td>
+        <td><a href="ai/3">black</a></td>
+    </tr>
+    <tr>
+        <td rowspan="4" style="background: ivory; font-size: 20px; vertical-align: middle;">Medium</td>
+        <td>Room 4</td>
+        <td><a href="ai/4">white</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Room 5</td>
+        <td><a href="ai/5">white</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Room 6</td>
+        <td></td>
+        <td><a href="ai/6">black</a></td>
+    </tr>
+    <tr>
+        <td>Room 7</td>
+        <td></td>
+        <td><a href="ai/7">black</a></td>
+    </tr>
+    <tr>
+        <td rowspan="4" style="background: pink; font-size: 20px; vertical-align: middle;">Hard</td>
+        <td>Room 8</td>
+        <td><a href="ai/8">white</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Room 9</td>
+        <td><a href="ai/9">white</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Room 10</td>
+        <td></td>
+        <td><a href="ai/10">black</a></td>
+    </tr>
+    <tr>
+        <td>Room 11</td>
+        <td></td>
+        <td><a href="ai/11">black</a></td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="4" style="background: crimson; font-size: 30px; vertical-align: middle;">Duel</td>
+        <td>Room 12</td>
+        <td><a href="white/12">white</a></td>
+        <td><a href="black/12">black</a></td>
+    </tr>
+    <tr>
+        <td>Room 13</td>
+        <td><a href="white/13">white</a></td>
+        <td><a href="black/13">black</a></td>
+    </tr>
+    <tr>
+        <td>Room 14</td>
+        <td><a href="white/14">white</a></td>
+        <td><a href="black/14">black</a></td>
+    </tr>
+    <tr>
+        <td>Room 15</td>
+        <td><a href="white/15">white</a></td>
+        <td><a href="black/15">black</a></td>
+    </tr>
+    </tbody>
+</table>
+<button type="button" class="btn btn-outline-dark btn-lg" style="margin: 10px;">
+    <a href="../">Back to the game list</a>
+</button>
+{% endblock %}
