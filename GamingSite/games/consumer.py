@@ -91,8 +91,8 @@ class OthelloMoveAI(AsyncWebsocketConsumer):
         elif move == -2:
             self.model.initialize()
         elif move == -3:
+            time.sleep(1)
             if self.room_id < 4:
-                time.sleep(1)
                 self.model.play_ai_greedy()
             else:
                 self.model.play_ai_minimax()
